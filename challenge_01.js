@@ -38,8 +38,21 @@ console.log("Die Summe ist: " + summe);
 /*********** Variante 2  ****************/
 
 // Kompaktere Lösung
+/*
 let zahl1, zahl2, summe;
 zahl1 = parseInt(prompt("Bitte Zahl 1 eingeben"));
 zahl2 = parseInt(prompt("Bitte Zahl 2 eingeben"));
 summe = zahl1 + zahl2; 
 console.log("Die Summe ist: " + summe);
+*/
+
+/*********** Variante 3  ****************/
+// Kompakt, aber schlecht lesbar
+console.log
+(
+    "Die Summe ist: " + 
+    (
+        parseInt(prompt("Bitte Zahl 1 eingeben")) +
+        parseInt(prompt("Bitte Zahl 2 eingeben"))
+    )
+);
